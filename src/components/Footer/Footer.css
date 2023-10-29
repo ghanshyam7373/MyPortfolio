@@ -1,0 +1,53 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--dark-grey);
+}
+.logoGroup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.footerText {
+  color: var(--light-grey);
+  font-family: var(--desc-font);
+  font-size: 0.8rem;
+}
+.connect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.profileSection {
+  background-color: var(--pure-white);
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profileIcon {
+  color: var(--dark-grey);
+}
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .connect {
+    flex-direction: row-reverse;
+    gap: 0.5rem;
+  }
+  .footerText {
+    font-size: 0.7rem;
+  }
+}

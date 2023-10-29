@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--main-black);
+}
+
+:root {
+  /* colors  */
+  --main-black: #000000;
+  --dark-grey: #111218;
+  --light-grey: #888888;
+  --light-cyan: #14ecfa;
+  --pure-white: #fff;
+  --head-golden: #d5ae4c;
+  --gradient-cyan: linear-gradient(
+    180deg,
+    #2ac1ca 0%,
+    rgba(122, 168, 172, 0.79) 100%
+  );
+
+  /* fonts  */
+  --heading-font: "Anek Bangla", sans-serif;
+  --desc-font: "Inter", sans-serif;
+}

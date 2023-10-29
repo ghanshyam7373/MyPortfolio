@@ -1,0 +1,65 @@
+a {
+  text-decoration: none;
+  color: var(--light-grey);
+  font-family: var(--desc-font);
+  font-size: 1.1rem;
+}
+.routes li {
+  list-style: none;
+}
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+.myLogo {
+  width: 3rem;
+  height: auto;
+}
+.routes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.active {
+  border-bottom: 0.1rem solid var(--light-cyan);
+  border-radius: 10%;
+}
+.toggleGroup {
+  display: none;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+}
+.navIcon {
+  color: var(--light-cyan);
+  font-size: 2rem;
+}
+#toggleNav {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .toggleGroup {
+    display: block;
+  }
+  .routes {
+    position: fixed;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    top: 0;
+    right: -50%;
+    padding: 6rem 2rem;
+    margin: 0;
+    height: 100vh;
+    background-color: var(--dark-grey);
+    transition: all 0.5s ease;
+  }
+  .open {
+    right: 0;
+  }
+}
