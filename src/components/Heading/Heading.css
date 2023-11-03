@@ -1,0 +1,6 @@
+.title {
+  color: var(--pure-white);
+  font-size: 2rem;
+  font-family: var(--heading-font);
+  line-height: 2rem;
+}

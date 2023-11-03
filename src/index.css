@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
   background-color: var(--main-black);
 }
 
@@ -11,6 +12,7 @@ body {
   --dark-grey: #111218;
   --light-grey: #888888;
   --light-cyan: #14ecfa;
+  --dark-cyan: #1f9098;
   --pure-white: #fff;
   --head-golden: #d5ae4c;
   --gradient-cyan: linear-gradient(

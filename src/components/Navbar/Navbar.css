@@ -8,7 +8,9 @@ a {
   list-style: none;
 }
 .navbar {
-  position: relative;
+  z-index: 1;
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,6 +29,12 @@ a {
 .active {
   border-bottom: 0.1rem solid var(--light-cyan);
   border-radius: 10%;
+  color: var(--light-cyan);
+}
+.navlink:hover {
+  border-bottom: 0.1rem solid var(--light-cyan);
+  border-radius: 10%;
+  transition: 0.5s ease;
 }
 .toggleGroup {
   display: none;
@@ -41,7 +49,6 @@ a {
 #toggleNav {
   display: none;
 }
-
 @media only screen and (max-width: 768px) {
   .toggleGroup {
     display: block;
