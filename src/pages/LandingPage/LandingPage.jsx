@@ -1,7 +1,7 @@
 import React from "react";
 import "./LandingPage.css";
 import FillBtn from "../../components/Buttons/FillBtn/FillBtn";
-import mainImg from "../../assets/images/mainImg.svg";
+import mainImg from "../../assets/images/mainImg.png";
 import Heading from "../../components/Heading/Heading";
 import OutlineBtn from "../../components/Buttons/OutlineBtn/OutlineBtn";
 import Card from "../../components/Card/Card";
@@ -33,7 +33,7 @@ const LandingPage = () => {
       <div className="topContent">
         <div className="mainHead">
           <div className="heading">
-            <p className="mainHeadText">Web</p>
+            <p className="mainHeadText">Ghanshyam Mistry</p>
             <p className="mainHeadText">Developer & Designer</p>
           </div>
           <div className="descPara">
@@ -47,7 +47,11 @@ const LandingPage = () => {
           <FillBtn to="/" label="More About Me" />
         </div>
         <div className="mainImg">
-          <img src={mainImg} alt="" srcSet="" />
+          <img
+            src="https://res.cloudinary.com/duoe2yt88/image/upload/v1699125595/Images/bja5765stim6mmje3qxr.png"
+            alt=""
+            srcSet=""
+          />
         </div>
       </div>
 

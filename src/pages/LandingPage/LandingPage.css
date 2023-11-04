@@ -1,3 +1,6 @@
+.landingPage {
+  background-image: url("../../assets/images/background.png");
+}
 .mainHeadText {
   background: linear-gradient(294deg, #156469 14.2%, #93e8ee 100%);
   background-clip: text;
@@ -32,20 +35,22 @@
   font-family: var(--desc-font);
 }
 .topContent {
-  background: url("../../assets/images/background.png") !important;
   width: 100vw;
   height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .mainImg {
-  width: 100%;
-  height: auto;
+  width: 50%;
+  height: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 2rem 0;
 }
 .mainImg img {
-  width: 70%;
+  width: 100%;
 }
 .recentProject {
   width: 100%;
@@ -71,9 +76,6 @@
 .partitionPortion {
   position: relative;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -131,7 +133,43 @@
   border-radius: 15px;
   padding: 1rem;
   cursor: pointer;
+  transition: all 1.5s ease-in-out;
 }
+.resumeImage img:hover {
+  -webkit-animation: shadow-drop-2-br 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: shadow-drop-2-br 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes shadow-drop-2-br {
+  0% {
+    -webkit-transform: translateZ(0) translateX(0) translateY(0);
+    transform: translateZ(0) translateX(0) translateY(0);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translateZ(50px) translateX(-12px) translateY(-12px);
+    transform: translateZ(50px) translateX(-12px) translateY(-12px);
+    -webkit-box-shadow: 12px 12px 20px -12px var(--light-cyan);
+    box-shadow: 12px 12px 20px -12px var(--light-cyan);
+  }
+}
+@keyframes shadow-drop-2-br {
+  0% {
+    -webkit-transform: translateZ(0) translateX(0) translateY(0);
+    transform: translateZ(0) translateX(0) translateY(0);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translateZ(50px) translateX(-12px) translateY(-12px);
+    transform: translateZ(50px) translateX(-12px) translateY(-12px);
+    -webkit-box-shadow: 12px 12px 20px -12px var(--light-cyan);
+    box-shadow: 12px 12px 20px -12px var(--light-cyan);
+  }
+}
+
 .resumeDesc {
   color: var(--light-grey);
   font-family: var(--desc-font);
@@ -144,18 +182,178 @@
   gap: 1rem;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1070px) {
+  .topContent {
+    justify-content: center;
+  }
+  .mainImg {
+    width: 50%;
+  }
+  .mainHeadText {
+    font-size: 2.2rem;
+    margin-top: 1rem;
+    line-height: 2.3rem;
+  }
   .mainHead {
-    width: 80%;
-    gap: 1rem;
+    width: 50%;
+    gap: 0.5rem;
+  }
+  .mainImg img {
+    width: 100%;
+  }
+  .descPara {
+    width: 100%;
+  }
+  .mainDesc {
+    font-size: 0.8rem;
+    line-height: 0.7rem;
+  }
+  .partitionHead {
+    font-size: 1.9rem !important;
+    line-height: 1rem !important;
+  }
+  .partitionBackgroundBox {
+    height: 12rem;
+  }
+  .resumeDesc {
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .mainImg {
+    width: 50%;
+  }
+  .mainHeadText {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .mainImg img {
+    width: 100%;
+  }
+  .descPara {
+    width: 100%;
+  }
+  .mainDesc {
+    font-size: 0.7rem;
+    line-height: 0.7rem;
+  }
+  .mainHead {
+    width: 50%;
+    gap: 0.5rem;
+  }
+  .partitionHead {
+    font-size: 1.6rem !important;
+    line-height: 1rem !important;
+  }
+  .partitionBackgroundBox {
+    height: 12rem;
+  }
+  .resumeDesc {
+    font-size: 1.1rem;
   }
 }
 @media only screen and (max-width: 768px) {
+  .mainImg {
+    width: 50%;
+  }
   .mainHeadText {
-    font-size: 2.8rem;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+  }
+  .mainDesc {
+    font-size: 0.7rem;
+    line-height: 0.7rem;
   }
   .mainHead {
+    width: 50%;
+    gap: 0.3rem;
+  }
+  .partitionHead {
+    font-size: 1.4rem !important;
+    line-height: 0.8rem !important;
+  }
+  .partitionBackgroundBox {
+    height: 9rem;
+  }
+  .resumeContent {
+    width: 70%;
     gap: 0.5rem;
+  }
+  .resumeDesc {
+    font-size: 0.9rem;
+  }
+  .partitionDesc {
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (max-width: 660px) {
+  .topContent {
+    flex-direction: column;
+  }
+  .mainImg {
+    width: 100%;
+  }
+  .mainHeadText {
+    font-size: 2.3rem;
+    line-height: 2.3rem;
+  }
+  .descPara {
+    width: 100%;
+  }
+  .mainDesc {
+    font-size: 0.9rem;
+    line-height: 0.7rem;
+  }
+  .mainHead {
+    width: 100%;
+    gap: 0.3rem;
+  }
+  .cardGroup {
+    justify-content: center;
+  }
+  .partitionPortion {
+    flex-direction: column;
+  }
+  .partitionHead {
+    font-size: 1.8rem !important;
+    line-height: 0.8rem !important;
+  }
+  .partitionText {
+    width: 100%;
+    text-align: center;
+  }
+  .partitionDesc {
+    text-align: center;
+  }
+  .coderImageContainer {
+    width: 50%;
+  }
+  .partitionBackgroundBox {
+    top: 30%;
+    height: 21rem;
+  }
+  .resumePortion {
+    margin: 4rem auto;
+    justify-content: space-between;
+  }
+  .resumeContent {
+    width: 70%;
+    gap: 0.5rem;
+  }
+  .resumeImage {
+    width: 70%;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .resumeImage img {
+    width: 70%;
+  }
+  .resumeDesc {
+    font-size: 0.9rem;
+  }
+  .partitionDesc {
+    font-size: 0.7rem;
   }
 }
 @media only screen and (max-width: 515px) {
@@ -168,12 +366,51 @@
     width: 100%;
     gap: 0.5rem;
   }
+  .mainImg {
+    width: 100%;
+  }
   .descPara {
     width: 100%;
   }
   .mainDesc {
     font-size: 0.7rem;
     line-height: 0.7rem;
+  }
+  .partitionHead {
+    font-size: 1.3rem !important;
+    line-height: 0.8rem !important;
+  }
+  .partitionText {
+    width: 100%;
+  }
+  .coderImageContainer {
+    width: 60%;
+  }
+  .partitionBackgroundBox {
+    top: 30%;
+    height: 19rem;
+  }
+  .resumePortion {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .resumeContent {
+    width: 90%;
+    gap: 0.5rem;
+  }
+  .resumeImage {
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+  }
+  .resumeImage img {
+    width: 70%;
+  }
+  .resumeDesc {
+    font-size: 0.9rem;
+  }
+  .partitionDesc {
+    font-size: 0.65rem;
   }
 }
 @media only screen and (max-width: 375px) {
@@ -189,5 +426,18 @@
   .mainDesc {
     font-size: 0.65rem;
     line-height: 0.65rem;
+  }
+  .partitionHead {
+    font-size: 1rem !important;
+  }
+  .coderImageContainer {
+    width: 80%;
+  }
+  .partitionBackgroundBox {
+    top: 30%;
+    height: 19rem;
+  }
+  .partitionDesc {
+    font-size: 0.5rem;
   }
 }
