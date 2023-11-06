@@ -1,11 +1,19 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Navbar.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../../assets/images/logo.png";
 
 const Navbar = () => {
   const [isNavOpen, setNavOpen] = useState(false);
+  const location = useLocation();
   const [activeLink, setActiveLink] = useState("home");
+
+  useEffect(() => {
+    setActiveLink(
+      location.pathname === "/" ? "home" : location.pathname.slice(1)
+    );
+    console.log("h");
+  }, [location.pathname]);
 
   const toggleNav = () => {
     setNavOpen(!isNavOpen);

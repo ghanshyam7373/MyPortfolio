@@ -1,7 +1,6 @@
 import React from "react";
 import "./LandingPage.css";
 import FillBtn from "../../components/Buttons/FillBtn/FillBtn";
-import mainImg from "../../assets/images/mainImg.png";
 import Heading from "../../components/Heading/Heading";
 import OutlineBtn from "../../components/Buttons/OutlineBtn/OutlineBtn";
 import Card from "../../components/Card/Card";
@@ -44,7 +43,7 @@ const LandingPage = () => {
               meaningful connections in pursuit of excellence.
             </p>
           </div>
-          <FillBtn to="/" label="More About Me" />
+          <FillBtn to="/about" label="More About Me" />
         </div>
         <div className="mainImg">
           <img

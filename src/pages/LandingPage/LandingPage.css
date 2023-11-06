@@ -1,5 +1,5 @@
 .landingPage {
-  background-image: url("../../assets/images/background.png");
+  background-image: url("../../assets/images/background.png") !important;
 }
 .mainHeadText {
   background: linear-gradient(294deg, #156469 14.2%, #93e8ee 100%);

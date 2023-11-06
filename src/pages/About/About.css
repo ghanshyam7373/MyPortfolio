@@ -1,0 +1,182 @@
+.aboutPage {
+  background-image: url("../../assets/images/background.png") !important;
+}
+.headAbout,
+.pHeading {
+  display: inline;
+}
+.aboutHeading {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+.headAbout {
+  color: var(--dark-cyan);
+}
+.pHeading {
+  color: var(--pure-white);
+  font-size: 2rem;
+  font-weight: 200;
+  font-family: var(--heading-font);
+  line-height: 2rem;
+}
+.aboutPortion {
+  width: 90%;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.aboutContent {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 70%;
+  gap: 1rem;
+}
+.aboutImage {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.aboutImage img {
+  width: 100%;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 1.5s ease-in-out;
+}
+.aboutDesc {
+  color: var(--light-grey);
+  font-family: var(--desc-font);
+  font-size: 1.3rem;
+}
+.listAboutMe {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.myAbout {
+  width: 95%;
+  margin: auto;
+}
+.vertical-timeline-element-icon,
+.vertical-timeline-element-content {
+  box-shadow: none !important;
+}
+.vertical-timeline-element-title {
+  font-family: var(--heading-font);
+  color: var(--pure-white);
+}
+.vertical-timeline-element-subtitle {
+  font-family: var(--desc-font);
+  color: var(--light-cyan);
+  font-weight: 500;
+}
+.vertical-timeline-element-desc {
+  font-family: var(--desc-font);
+  color: var(--light-grey);
+  font-weight: 500;
+}
+.listHeading {
+  margin: 3rem auto;
+  text-align: center;
+  width: 90%;
+}
+.listingSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.education,
+.experience {
+  width: 100%;
+}
+@media only screen and (max-width: 1070px) {
+  .aboutDesc {
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .aboutDesc {
+    font-size: 1.1rem;
+  }
+  .aboutContent {
+    width: 60%;
+  }
+  .aboutImage {
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .aboutPortion {
+    margin: auto;
+  }
+  .aboutContent {
+    width: 60%;
+    gap: 0.5rem;
+  }
+  .aboutImage {
+    width: 40%;
+  }
+  .aboutDesc {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 660px) {
+  .aboutPortion {
+    margin: auto;
+  }
+  .aboutHeading {
+    flex-direction: column;
+  }
+  .headAbout,
+  .pHeading {
+    padding: 0;
+    margin: 0;
+  }
+  .aboutPortion {
+    margin: 4rem auto;
+    justify-content: space-between;
+  }
+  .aboutContent {
+    width: 70%;
+    gap: 0.5rem;
+  }
+  .aboutImage {
+    width: 70%;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .aboutDesc {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 515px) {
+  .aboutPortion {
+    margin: auto;
+  }
+  .aboutPortion {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .aboutContent {
+    width: 90%;
+    gap: 0.5rem;
+  }
+  .aboutImage {
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutImage img {
+    width: 90%;
+  }
+  .aboutDesc {
+    font-size: 0.9rem;
+  }
+}

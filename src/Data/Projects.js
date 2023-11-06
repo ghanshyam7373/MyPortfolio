@@ -34,7 +34,7 @@ const Projects = [
   {
     title: "Sentiverse",
     img: "https://res.cloudinary.com/duoe2yt88/image/upload/v1699032771/Images/yv8uyo44guyf2ldo3dku.png",
-    desc: "Sentiverse shows weather the text is positive, negative or neutral along with its percentage of confidence. This website is made using API.",
+    desc: "Sentiverse shows weather the text is positive, negative or neutral along with its percentage of confidence. It also provides guide page. This website is made using API.",
     skills: "React.js, API Integration",
     url: "https://sentiverse.netlify.app/",
     github: "https://github.com/ghanshyam7373/sentiverse",
