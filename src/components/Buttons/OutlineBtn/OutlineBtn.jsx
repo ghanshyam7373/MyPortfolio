@@ -11,7 +11,7 @@ const OutlineBtn = (props) => {
           {label}
         </button>
       ) : (
-        <Link to={to}>
+        <Link to={to} target="_blank">
           <button className="outlineBtn">{label}</button>
         </Link>
       )}
