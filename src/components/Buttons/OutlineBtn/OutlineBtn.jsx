@@ -11,7 +11,7 @@ const OutlineBtn = (props) => {
           {label}
         </button>
       ) : (
-        <Link to={to} target="_blank">
+      { <Link to={to} target={(to === "/about" || to === "/projects")? "" : "_blank"}>
           <button className="outlineBtn">{label}</button>
         </Link>
       )}
