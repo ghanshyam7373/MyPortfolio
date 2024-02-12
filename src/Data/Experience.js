@@ -1,5 +1,10 @@
 const Experience = [
   {
+    company: "Softsages Technology",
+    positionTime: "Web Developer & Designer Intern (Dec 2023 - Present)",
+    desc: "Contributing to the advancement of live project at SoftSages Technology as a React Developer and UI/UX Designer Intern. Responsible for developing new modules, enhancing functionalities, and resolving bugs in existing modules. Additionally, involved in designing innovative modules for various ongoing projects",
+  },
+  {
     company: "Vadodara Fire & Emergency Services",
     positionTime:
       "Front End Web Developer & Designer Intern (Mar 2023 - Jul 2023)",

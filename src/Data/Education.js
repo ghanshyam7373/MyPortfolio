@@ -3,8 +3,7 @@ const Education = [
     institute: "The Maharaja Sayajirao University of Baroda",
     degree:
       "Bachelor's Degree in Computer Science & Engineering (2021 - Present)",
-    percentage:
-      "Percentage: 67.7 / 100 (Considered as First Class with Distinction)",
+    percentage: "Percentage: 72.2 / 100",
   },
   {
     institute: "Parul Polytechnic Institute",

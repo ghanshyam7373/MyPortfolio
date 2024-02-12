@@ -1,5 +1,21 @@
 const Projects = [
   {
+    title: "CompileCraft",
+    img: "https://res.cloudinary.com/duoe2yt88/image/upload/v1707767202/Screenshot_2024-02-13_011537_thest6.png",
+    desc: "It is an innovative platform that revolutionizes the way users interact with programming and design. The project's functionality for users to craft & code within a unified web environment.",
+    skills: "React.js, Node.js",
+    url: "https://compilecraft.netlify.app/",
+    github: "https://github.com/ghanshyam7373/CompileCraft",
+  },
+  {
+    title: "PawsomeLife",
+    img: "https://res.cloudinary.com/duoe2yt88/image/upload/v1707766390/Screenshot_2024-02-13_010231_fgt7hm.png",
+    desc: "'PawsomeLife' is a dynamic web platform designed to address the challenges associated with pet acquisition and breeding in India. A seamless, interactive space for pet owners.",
+    skills: "React.js, Redux, API, CSS3",
+    url: "https://pawsomelife.netlify.app/",
+    github: "",
+  },
+  {
     title: "AudioExtractor",
     img: "https://res.cloudinary.com/duoe2yt88/image/upload/v1699033262/Images/qvtwvwcwgc3czf6yodnf.png",
     desc: "Audio Extractor in Python using the power of MoviePy and Streamlit libraries. Easily extract audio from any MP4 video file. Can easily download the audio file.",

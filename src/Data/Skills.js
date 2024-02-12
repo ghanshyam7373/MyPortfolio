@@ -6,6 +6,12 @@ const Skills = [
     lang: "Redux",
   },
   {
+    lang: "Material UI",
+  },
+  {
+    lang: "TypeScript",
+  },
+  {
     lang: "JavaScript",
   },
   {
@@ -19,6 +25,12 @@ const Skills = [
   },
   {
     lang: "Figma Software",
+  },
+  {
+    lang: "Framer",
+  },
+  {
+    lang: "WebFlow",
   },
   {
     lang: "Bootstrap5",
