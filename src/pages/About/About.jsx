@@ -1,4 +1,3 @@
-import React from "react";
 import "./About.css";
 import Heading from "../../components/Heading/Heading";
 import vectorImg from "../../assets/images/Speaker.png";

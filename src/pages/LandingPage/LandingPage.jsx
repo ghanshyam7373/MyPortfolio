@@ -7,7 +7,7 @@ import Card from "../../components/Card/Card";
 import Projects from "../../Data/Projects";
 import coder from "../../assets/images/Coder.png";
 import resume from "../../assets/resume/GhanshyamMistryResume.pdf";
-import resumePng from "../../assets/resume/GhanshyamMistryResume.png";
+import resumePng from "../../assets/resume/GhanshyamMistryResume.jpg";
 import { useState } from "react";
 
 const LandingPage = () => {

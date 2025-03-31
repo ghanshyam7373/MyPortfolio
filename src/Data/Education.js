@@ -1,9 +1,8 @@
 const Education = [
   {
     institute: "The Maharaja Sayajirao University of Baroda",
-    degree:
-      "Bachelor's Degree in Computer Science & Engineering (2021 - Present)",
-    percentage: "Percentage: 72.2 / 100",
+    degree: "B.E. in Computer Science & Engineering (2021 - 2024)",
+    percentage: "Percentage: 71.0 / 100",
   },
   {
     institute: "Parul Polytechnic Institute",
@@ -12,7 +11,7 @@ const Education = [
   },
   {
     institute: "Bright School English Medium",
-    degree: "Secondary School Certificate (10th Standard - 2018)",
+    degree: "Secondary School Certificate (2017 - 2018)",
     percentage: "Percentage: 70.7 / 100",
   },
 ];
