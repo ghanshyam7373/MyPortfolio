@@ -2,7 +2,7 @@ const Experience = [
   {
     company: "Infinite Enterprise Consulting",
     positionTime: "Software Engineer (April 2024 - Present)",
-    desc: "Developed a major new module from scratch for the company's largest product and improved various existing features. Resolved bugs and added new modules across multiple products, working on both frontend (React.js) and backend (Spring Boot), with Oracle for database management. Additionally, learned and implemented fine-tuning of LLM models.",
+    desc: "I developed a major new module for the company’s main product and improved existing features to enhance performance and user experience. Working across the full stack (React.js, Spring Boot, Oracle), I also created a Java library for LLM-based chat using LangChain, enabling contextual conversations. I built and integrated the MCP server/client, allowing intelligent, tool-assisted LLM interactions tailored to each module. Additionally, I gained hands-on experience fine-tuning LLMs for improved real-world performance.",
   },
   {
     company: "Softsages Technology",

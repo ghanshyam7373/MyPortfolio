@@ -33,7 +33,7 @@ const LandingPage = () => {
         <div className="mainHead">
           <div className="heading">
             <p className="mainHeadText">Ghanshyam Mistry</p>
-            <p className="mainHeadText">Developer & Designer</p>
+            <p className="mainHeadText">Full-Stack & AI Engineer</p>
           </div>
           <div className="descPara">
             <p className="mainDesc">
